@@ -308,13 +308,85 @@ header {
     color: #1d3a40;
 }
 
-@media (max-width: 768px) {
-    .achievements-container {
-        flex-direction: column;
-    }
-    
-    .achievements-image, 
-    .achievements-content {
-        width: 100%;
-    }
+
+/* projects */
+.projects-section {
+    width: 100%;
+    padding: 0 30px 50px;
+    box-sizing: border-box;
+    background-color: #f5f1ec;
 }
+
+.section-title {
+    color: #1d3a40;
+    background-color: #d0b739;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 3rem;
+    font-family: clash;
+    word-spacing: 18px;
+    font-weight: 700;
+    margin:0 auto 50px auto;
+    text-align: center; 
+    position: relative;
+    left: calc(50% - 110px);
+    
+
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.project-card {
+    flex: 1;
+    min-width: 300px;
+    background-color: rgba(242, 207, 202, 0.8);
+    color: #1d3a40;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.project-card h3 {
+    color: #1d3a40;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    border-bottom: 4px solid #d0b739;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.project-description {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project-tools {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.project-tools span {
+    font-size: 1.3rem;
+    color: #1d3a40;
+    font-weight: 700;
+}
+
+.project-link {
+    font-style: italic;
+    color: #1d3a40;
+}
+
