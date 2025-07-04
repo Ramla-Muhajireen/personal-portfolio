@@ -1,0 +1,320 @@
+@font-face {
+    font-family: clash;
+    src: url(font/ClashDisplay-Variable.ttf);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Optional: ensure full height */
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #f2cfca;
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.header-logo {
+    background-image: url(img/logo.png);
+    width: 160px;
+    height: 80px;
+    z-index: 1000;
+    margin-left: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-nav {
+    width: fit-content;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.header-nav ul {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.header-nav ul li {
+    display: inline;
+    float: left;
+    margin-right: 10px;
+    margin: 15px;
+}
+
+.header-nav ul li a {
+    font-family: clash;
+    font-size: 18px;
+    word-spacing: 5px;
+    font-weight: 600;
+    color: #1d3a40;
+    text-decoration: none;
+    padding: 10px 10px;           
+}
+
+.header-nav ul li a:hover {
+    border-radius: 60px;
+    background-color: #f5f1ec;
+}
+
+.custom-hr {
+    border: 0;
+    height:3px;
+    background-color: #1d3a40 !important;
+    margin: 0;
+}
+
+/* main*/
+
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f1ec;
+}
+
+.main-about {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/potrait1.png), url(img/background2.png);
+    background-color: #f5f1ec;
+    background-size: 110vh,  cover;
+    background-repeat: no-repeat;
+    background-position:  center right ,center;
+    display: flex;
+    align-items: center; 
+    justify-content: start;
+    border-radius: 0 0 150px 150px;
+}
+
+.main-about::after {
+    content: '';
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #f5f1ec;
+    z-index: -1;
+}
+
+.main-about-text{
+    
+    width: 50%;
+    height: 70%;
+    background-color: rgb(242, 207, 202 , 0.8);
+    border-radius: 100px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 60px;
+    
+}
+
+ .main-about-text h1 {
+            text-align: center;
+            color: #1d3a40;
+            background-color: #d0b739;
+            border-radius: 50px;
+            padding: 20px;
+            font-family: clash;
+            word-spacing: 18px;
+            font-size: 3rem;
+            font-weight: 600;
+            margin: 20px auto;
+            width: fit-content;
+        }
+
+.main-about-text p {
+            color:#1d3a40;
+            font-size: 22px;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 10px 20px;
+            height: calc(100% - 160px); /* Adjust this value based on heading height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 44px;
+        }
+
+ /* education and skills */
+
+.edu-skill {
+    position: relative; 
+    z-index: 2; 
+    padding-top: 50px; 
+    background-color:#f5f1ec;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    height: auto;
+    align-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.edu-skill-h1 {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 10px 0; 
+    color: #1d3a40;
+    font-size: 3rem;
+    font-family: clash;
+    word-spacing: 18px;
+    font-weight: 700;
+}
+/* Styling for each grid item */
+.edu, .skill {
+    background-color: rgba(242, 207, 202); 
+    color: #1d3a40;
+    font-family:sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 30px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    width: 40%;
+    height: 70%; 
+    margin: 50px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu:hover, .skill:hover {
+    transform: scale(1.03); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); 
+}
+
+.edu h1, .skill h1 {
+    text-align: center; /* Center the headings */
+    background-color: #d0b739; /* Golden background */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* extra curricular section */
+.extra-curricular {
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    box-sizing: border-box;
+    text-align: left;
+    background-color: #f5f1ec;
+    background-image: url(img/extra2.png);
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position: center right;
+}
+
+.section-title {
+    color: #1d3a40;
+    background-color: #d0b739;
+    font-size: 3rem;
+    font-family: clash;
+    word-spacing: 18px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.activities-list {
+    list-style-type:circle;
+    padding: 0 ;
+    margin: 0;
+}
+
+.activities-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #1d3a40;
+}
+
+/* achivements */
+
+.achievements-container {
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    gap: 40px; 
+    align-items: center;
+    background-color: #f5f1ec;
+}
+
+.achievements-image {
+    flex: 1;
+    min-width: 0;
+}
+
+.achievements-image img {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border-radius: 20px;
+    
+}
+
+.achievements-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.section-title {
+    color: #1d3a40;
+    background-color: #d0b739;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 3rem;
+    font-family: clash;
+    word-spacing: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.achievements-list {
+    list-style-type: circle;
+    padding: 0;
+    margin: 0;
+}
+
+.achievements-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #1d3a40;
+}
+
+@media (max-width: 768px) {
+    .achievements-container {
+        flex-direction: column;
+    }
+    
+    .achievements-image, 
+    .achievements-content {
+        width: 100%;
+    }
+}
