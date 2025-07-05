@@ -604,3 +604,224 @@ header {
         height: 25px;
     }
 }
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1200px) {
+    /* Adjust padding for large tablets */
+    .extra-curricular {
+        padding: 50px 50px;
+    }
+    
+    .contact-cv-section {
+        padding: 80px 80px;
+    }
+}
+
+@media (max-width: 992px) {
+    /* Tablet styles */
+    .main-about {
+        background-size: 80vh, cover;
+    }
+    
+    .main-about-text {
+        width: 60%;
+        margin-left: 30px;
+    }
+    
+    .edu, .skill {
+        width: 45%;
+    }
+    
+    .achievements-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .achievements-image img {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .contact-cv-section {
+        padding: 60px 40px;
+        column-gap: 80px;
+    }
+
+    .contact-item{
+        margin-bottom: 10px;
+    }
+    .contact-link{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile styles */
+    /* Header adjustments */
+    .header-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #f2cfca;
+        padding: 20px 0;
+        z-index: 1000;
+    }
+    
+    .header-nav ul.show {
+        display: flex;
+    }
+    
+    .header-nav ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        color: #1d3a40;
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+    }
+
+    /* Main content adjustments */
+    .main-about {
+        background-image: url(img/background2.png);
+        background-size: cover;
+    }
+    
+    .main-about-text {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        padding: 15px;
+        border-radius: 50px;
+    }
+    
+    .main-about-text h1 {
+        font-size: 2.5rem;
+        padding: 15px;
+    }
+    
+    .main-about-text p {
+        font-size: 18px;
+        line-height: 1.6;
+        height: auto;
+    }
+
+    /* Education & Skills */
+    .edu-skill {
+        flex-direction: column;
+    }
+    
+    .edu, .skill {
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    /* Extra Curricular */
+    .extra-curricular {
+        padding: 30px 20px;
+        background-size: 80vh;
+    }
+    
+    .extra-section-title {
+        font-size: 2rem;
+    }
+    
+    .activities-list li {
+        font-size: 1.2rem;
+    }
+    
+    /* Achievements */
+    .achievements-content {
+        text-align: center;
+    }
+    
+    .achive-section-title {
+        font-size: 1.8rem;
+        margin: 0 auto 30px;
+    }
+    
+    /* Projects */
+    .project-section-title {
+        font-size: 2rem;
+        left: 0;
+        margin: 0 auto 30px;
+        display: block;
+    }
+    
+    .projects-container {
+        flex-direction: column;
+    }
+    
+    .project-card {
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* Contact & CV */
+    .contact-cv-section {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 40px;
+    }
+    
+    .contact-info, .cv-container {
+        width: 100%;
+        height: auto;
+    }
+    
+    .contact-item {
+        width: 90%;
+    }
+    
+    .cv-box {
+        padding: 20px;
+    }
+    
+    .cv-link {
+        padding: 20px 30px;
+    }
+    
+    /* Footer */
+    .social-links {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Small mobile adjustments */
+    .main-about-text h1 {
+        font-size: 2rem;
+    }
+    
+    .edu-skill-h1, 
+    .extra-section-title, 
+    .achive-section-title,
+    .project-section-title,
+    .contact-section-title,
+    .cv-section-title {
+        font-size: 1.8rem;
+        word-spacing: 10px;
+    }
+    
+    .cv-link {
+        font-size: 1.1rem;
+        padding: 15px 25px;
+    }
+    
+    .contact-link {
+        font-size: 14px;
+    }
+}
